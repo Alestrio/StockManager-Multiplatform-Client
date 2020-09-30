@@ -1,3 +1,3 @@
 
-rootProject.name = "dsfqsdvxcvwsdwxvwsrgf"
+rootProject.name = "StockManager-MultiPlatform-Client"
 
