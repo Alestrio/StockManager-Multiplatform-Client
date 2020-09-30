@@ -1,6 +1,6 @@
 package stockable
 
-class Stockable(val properties:PropertySet) {
+class Stockable(private val properties:PropertySet) {
     fun addProperty(prop:StockableProperty<*>){
         this.properties.add(prop)
     }

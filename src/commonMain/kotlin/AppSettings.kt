@@ -1,4 +1,4 @@
-class AppSettings(var address : String, var username : String, var password: String) {
+class AppSettings(private val filePath:String="") {
     init{
 
     }
@@ -13,5 +13,17 @@ class AppSettings(var address : String, var username : String, var password: Str
 
     fun getStockableDatabases(): Server {
         TODO()
+    }
+
+    fun getAddress():String{
+        return this.getPropertyByKey("address")
+    }
+
+    fun getUsername():String{
+        return this.getPropertyByKey("username")
+    }
+
+    fun getPassword():String{
+        return this.getPropertyByKey("password")
     }
 }
